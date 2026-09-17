@@ -22,12 +22,9 @@ O endereço acima é o destino esperado; confirme o estado e o link publicado no
 
 ## Visualização da experiência
 
-A seção `#visualizacao` contém um exemplo ilustrativo em HTML. Não é uma captura real nem uma conversa ativa. Para usar uma imagem real:
+A seção `#visualizacao` apresenta uma captura real da interface de Luma, fornecida pela autora, em `assets/luma-interface.jpeg`. A imagem é exibida por inteiro, de forma responsiva, e pode ser aberta em tamanho original.
 
-1. Coloque a captura em `assets/luma-interface.webp` ou outro formato adequado.
-2. Substitua o elemento `.demo-window` por uma imagem com texto alternativo descritivo.
-3. Atualize a legenda para identificar a captura real.
-4. Remova dados pessoais e credenciais da captura antes de publicar.
+Para atualizar a captura, substitua esse arquivo ou ajuste o caminho em `index.html`. Mantenha o texto alternativo e a legenda coerentes com a imagem. Confira se a captura não contém credenciais ou dados que você não deseja publicar.
 
 ## Referência
 
