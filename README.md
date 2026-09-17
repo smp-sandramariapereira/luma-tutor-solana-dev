@@ -1,100 +1,287 @@
-# Luma - Tutor Solana
+# Luma — tutor Solana
 
-Kit aberto de tutoria para ideathons e oficinas Solana de desenvolvimento de aplicações. Quem usa conversa com **Luma**, um tutor Solana que guia a aprendizagem no ritmo de quem está construindo — da primeira conta até programas, tokens e testes.
+**Tutoria guiada em português brasileiro para aprender a desenvolver na Solana.**
 
-O projeto nasceu como entrega de **aprendizagem** (Solana Foundation Brazil). **Luma** ensina a pensar e a escrever o próximo passo; não entrega o produto inteiro no lugar de aprendiz.
+Luma é um kit de tutoria para ideathons e oficinas de desenvolvimento de aplicações Solana. Sua proposta é apoiar quem aprende a compreender conceitos, experimentar código e construir o próximo passo com autonomia.
 
-Repositório: https://github.com/smp-sandramariapereira/ia-ideathon-open-toolkit
+O projeto nasceu como uma entrega de aprendizagem no contexto da Solana Foundation Brazil. A experiência combina o objetivo declarado por aprendiz com orientações para explicações curtas, exemplos contextualizados, perguntas de raciocínio e opções de continuidade.
 
-## Quem é Luma
+Luma foi concebido para acompanhar a construção de conhecimento: ensina, orienta, revisa e ajuda a depurar o código produzido por aprendiz. Ao receber um pedido de aplicação completa, conduz a implementação em etapas e propõe o menor próximo exercício.
 
-Luma é um Tutor com conhecimento em Solana: sem gênero, em português do Brasil, sempre na segunda pessoa (**você** / **aprendiz**). 
+## Para quem é
 
-Se perguntarem quem é, a resposta é só esta: *Luma, tutor Solana*.
+- Pessoas que estão começando a desenvolver na Solana.
+- Aprendizes que precisam explorar um conceito ou superar um bloqueio durante uma atividade prática.
+- Participantes de ideathons que querem compreender as decisões envolvidas em sua construção.
+- Pessoas que facilitam oficinas e desejam oferecer um recurso complementar de tutoria individual.
 
-A especialidade é o ecossistema Solana, mas o escopo de formação é mais largo, porque desenvolver on-chain exige o chão de programação:
+## A proposta pedagógica
 
-- **Solana:** clusters, taxas, rent, contas, `owner` (o programa que manda nos dados — não “proprietário”), `signer`, PDAs, transações, Wallet Standard, `@solana/kit`, web3.js, Anchor, Pinocchio, Codama, SPL Token, Token-2022, CPIs, RPCs, Surfpool, LiteSVM, Mollusk, testes e segurança.
-- **Programação e software:** lógica, terminal, Git, testes, depuração, arquitetura, APIs, bancos, front-end e back-end; Rust (linguagem padrão dos exemplos), TypeScript e JavaScript quando o pedido pede.
-- **Blockchain e Web3:** carteiras, criptografia aplicada, tokens, NFTs, DeFi, DAOs, oráculos, indexadores e interoperabilidade. Outras chains entram para comparar padrões, não para desviar o foco.
+Luma organiza a orientação em torno do objetivo que você declara na sessão. Os princípios que orientam as respostas são:
 
-Fora de programação, blockchain ou Web3, Luma recusa com clareza e oferece voltar a esses temas.
+1. Responder primeiro ao que foi perguntado, com clareza e concisão.
+2. Trabalhar um conceito por vez, respeitando o passo atual da atividade.
+3. Apresentar um exemplo curto e situado no seu objetivo quando isso ajudar.
+4. Fazer uma pergunta que estimule raciocínio e construção da própria resposta.
+5. Oferecer opções para continuar, pedir um exemplo ou indicar uma dificuldade.
+6. Aguardar sua resposta, oferecer feedback e incentivar novas tentativas.
 
-## Como Luma ensina
+Esses princípios são expressos nas instruções enviadas ao modelo conectado. A qualidade e a adesão das respostas dependem da API e do modelo escolhidos. A avaliação da aprendizagem constitui uma frente de evolução do projeto.
 
-A tutoria é **progressiva e guiada**, amarrada ao objetivo que você declara na sessão.
+## O que você pode aprender
 
-1. Responde primeiro ao que foi perguntado, de forma curta.
-2. Ensina **um conceito por vez** — não despeja o mapa inteiro da atividade.
-3. Quando ajuda, mostra um **exemplo curto** situado no seu tópico (um mint, um PDA, um `owner`), não o programa completo.
-4. Faz **uma pergunta** para você raciocinar.
-5. Oferece botões de opção (continuar, pedir exemplo, dizer que ainda não entendeu, escolher um caminho).
-6. Espera a sua resposta antes de avançar; dá feedback e convida a tentar de novo, sem entregar a solução pronta.
+O foco é o ecossistema Solana e os fundamentos necessários para desenvolver nele.
 
-Código: o padrão é **Rust** válido em bloco Markdown, a menos que você peça outra linguagem ou nomeie uma ferramenta cuja linguagem seja inerente (web3.js, TypeScript, shell…). Se pedirem o dApp ou o programa inteiro, Luma decompõe em etapas, mostra um trecho didático com TODOs e propõe o menor próximo exercício. Pode revisar, explicar e depurar o que você escreveu; não completa o projeto em silêncio.
+| Área | Exemplos de temas |
+| --- | --- |
+| Solana | Contas, `owner`, `signer`, PDAs, transações, clusters, taxas e rent |
+| Programas e tokens | Rust, Anchor, Pinocchio, CPIs, SPL Token e Token-2022 |
+| Clientes e ferramentas | TypeScript, JavaScript, Wallet Standard, `@solana/kit`, web3.js e Codama |
+| Testes e desenvolvimento | Localnet, devnet, RPCs, Surfpool, LiteSVM, Mollusk, depuração e segurança |
+| Fundamentos de software | Lógica, terminal, Git, arquitetura, APIs, bancos de dados, front-end e back-end |
+| Blockchain e Web3 | Carteiras, criptografia aplicada, NFTs, DeFi, DAOs, oráculos e interoperabilidade |
 
-Exemplos Solana usam **localnet** ou **devnet**. Luma nunca pede seed, chave privada ou keypair e não assina nem envia transação.
+Os temas delimitam a orientação do tutor. A implementação atual não consulta automaticamente documentação nem executa os exemplos gerados. Para ferramentas e APIs específicas, confira versões e referências oficiais.
 
-## Tela
+## Como Luma se apresenta
 
-Duas colunas:
+Luma se identifica como **Luma, tutor Solana**, sem gênero, e conversa em português brasileiro. Usa **você** e **aprendiz** para se dirigir a quem participa.
 
-- **Esquerda:** conexão com a API e sessão (nome, objetivo/tópico, consentimento).
-- **Direita:** conversa com Luma, apresentação inicial e campo para perguntar ou colar código.
+Nas explicações sobre contas Solana, mantém o termo técnico `owner`, contextualizando-o como o programa responsável pelos dados da conta.
 
-Tema claro ou escuro no cabeçalho. A conversa tem rolagem própria.
+## Experiência atual
 
-## Tutorial: primeiro uso
+A implementação concentra-se em uma experiência individual de tutoria, com:
 
-### 1. Subir o kit
+- Interface web com formulário de sessão e conversa.
+- Objetivo ou tópico declarado por aprendiz.
+- Conexão configurável a uma API compatível com o formato OpenAI Chat Completions.
+- Respostas exibidas progressivamente, com renderização de Markdown e blocos de código.
+- Opções de continuidade propostas pelo modelo.
+- Botão para copiar trechos de código e alternância de tema claro ou escuro.
+- Persistência local do perfil mediante consentimento.
+- Testes automatizados dos componentes e das rotas HTTP.
 
-Requisito: **Node.js 20.18 ou superior**.
+O recorte favorece o uso em oficinas e a experimentação da abordagem pedagógica. Para esse uso, cada pessoa deve executar sua própria instância e utilizar sua própria API. A configuração do modelo e da chave é compartilhada por todo o processo do servidor.
+
+## Instalação
+
+### Requisitos
+
+- Git.
+- Node.js 24 LTS, recomendado para executar a aplicação e o comando atual de testes.
+- npm.
+- Acesso a uma API de linguagem compatível, ou a um servidor local compatível, como Ollama.
+
+O `package.json` atual declara Node.js 20.18 ou superior. Entretanto, o comando de testes utiliza `--experimental-strip-types`, indisponível nessa versão mínima. A recomendação acima contempla o fluxo de testes.
+
+### Executar localmente
 
 ```bash
-git clone https://github.com/smp-sandramariapereira/ia-ideathon-open-toolkit.git
-cd ia-ideathon-open-toolkit
-npm install
+git clone https://github.com/smp-sandramariapereira/luma-tutor-solana-dev.git
+cd luma-tutor-solana-dev
+npm ci
 npm run dev
 ```
 
-Abra **http://127.0.0.1:4177**
+Abra **http://127.0.0.1:4177**.
 
-A porta **4177** evita conflito com o tutor antigo na 4173. Se o projeto já estiver compilado:
+O comando `dev` compila o projeto e inicia o servidor. Depois da compilação, você também pode executar:
+
+```bash
+npm start
+```
+
+Para recompilar após alterar o código, execute `npm run build` e reinicie o servidor.
+
+## Primeiro uso
+
+### 1. Conectar o modelo
+
+Informe o endpoint, o modelo e, quando necessária, a chave de API. Clique em **conectar modelo**.
+
+Use uma API sua. O kit não inclui créditos nem um modelo embutido; o provedor pode cobrar pelas chamadas, incluindo a chamada de verificação da conexão.
+
+Para um servidor Ollama local com interface compatível, o endpoint pode ser `http://127.0.0.1:11434/v1`. Informe o nome de um modelo disponível nesse servidor. A chave é opcional nessa configuração local.
+
+A chave permanece na memória do processo do servidor. Após uma conexão bem-sucedida, o campo é limpo e ocultado na interface.
+
+### 2. Começar a sessão
+
+Marque o consentimento para guardar o perfil, informe como devemos chamar você e descreva seu objetivo. Exemplos:
+
+- “Entender contas e owner.”
+- “Aprender a criar um mint com Token-2022.”
+- “Compreender um PDA para um vault.”
+- “Testar uma instrução de um programa Anchor.”
+
+Clique em **começar sessão**. A conversa passa a usar seu nome e objetivo como contexto.
+
+### 3. Conversar e experimentar
+
+Pergunte, descreva um bloqueio ou cole um trecho de código. Você pode escrever livremente ou escolher uma opção de continuidade.
+
+Experimente o que foi discutido no seu ambiente de desenvolvimento, observe os resultados e volte com sua tentativa ou mensagem de erro. O propósito é construir compreensão enquanto você desenvolve.
+
+### 4. Mudar de tópico
+
+Após iniciar, o campo **Objetivo** passa a se chamar **Tópico**. Escreva um tópico diferente e clique em **reiniciar sessão**.
+
+O histórico visível é limpo e o novo tópico passa a orientar a conversa. Nome e consentimento permanecem no formulário.
+
+Cada recarregamento da página começa com formulário e conversa limpos. Essa limpeza não exclui os registros já persistidos no banco.
+
+## Código e segurança durante a aprendizagem
+
+As instruções de Luma estabelecem Rust como linguagem padrão dos exemplos, com exceção de pedidos explícitos de outra linguagem ou de ferramentas cuja linguagem seja inerente.
+
+Ao trabalhar com Solana, a orientação prioriza **localnet** e **devnet**. Luma não possui ferramentas para assinar ou enviar transações.
+
+Nunca cole seed phrase, chave privada, arquivo de keypair ou outros segredos na conversa. O código e as mensagens que você envia são encaminhados ao modelo conectado.
+
+Os exemplos têm finalidade didática. Confira dependências, versões e comportamento no seu ambiente antes de incorporá-los ao projeto.
+
+## Dados e privacidade
+
+### O que é persistido
+
+Com consentimento, o kit grava nome, objetivo e metadados de identificação, consentimento e datas da sessão em um banco SQLite. Por padrão, ele fica em `.ideathon-harness/learning-harness.sqlite`, na máquina que executa o servidor.
+
+O histórico da conversa não é persistido pelo servidor. A implementação atual exige consentimento para a persistência do perfil; uma sessão totalmente efêmera é uma possibilidade de evolução.
+
+### O que é enviado ao modelo
+
+O nome, o objetivo e as últimas 20 mensagens da conversa são enviados ao endpoint configurado, junto das instruções do tutor. O processamento e a eventual retenção pelo provedor seguem as condições desse serviço.
+
+Quando você executa o servidor em seu próprio computador, o banco fica nele. Se executar em outra máquina, os dados persistidos ficam nessa outra máquina.
+
+### Reiniciar e excluir
+
+Reiniciar ou recarregar limpa a conversa visível, mas não exclui os perfis persistidos. A interface atual não oferece exclusão de registros nem prazo automático de retenção.
+
+Para remover todos os perfis de uma instância local, encerre o servidor e exclua o arquivo `learning-harness.sqlite` e seus arquivos auxiliares `-wal` e `-shm`, se existirem, na pasta de dados configurada. Essa operação elimina os dados dessa instância.
+
+## Configuração do servidor
+
+O projeto lê variáveis do ambiente do processo. O arquivo `.env.example` serve como referência; a inicialização atual não carrega um arquivo `.env` automaticamente.
+
+| Variável | Finalidade | Padrão |
+| --- | --- | --- |
+| `HOST` | Endereço em que o servidor escuta | `127.0.0.1` |
+| `PORT` | Porta HTTP | `4177` |
+| `SOLANA_DEFAULT_CLUSTER` | Cluster exibido na sessão: `localnet` ou `devnet` | `localnet` |
+| `LEARNING_HARNESS_DATA_DIR` | Pasta do banco de perfis | `.ideathon-harness` |
+| `PILOT_SESSION_SECRET` | Segredo para assinar cookies de sessão; obrigatório fora dos hosts locais reconhecidos | Segredo de desenvolvimento em execução local |
+| `CHAT_REQUESTS_PER_MINUTE` | Limite de chamadas de chat por identificador de sessão | `20` |
+| `LLM_BASE_URL` | Endpoint da API quando configurada por ambiente | `https://api.openai.com/v1` |
+| `LLM_MODEL` | Nome do modelo quando configurado por ambiente | Sem padrão |
+| `LLM_API_KEY` | Chave da API quando configurada por ambiente | Sem padrão |
+
+Exemplo em um terminal compatível com POSIX, após compilar:
 
 ```bash
 PORT=4177 HOST=127.0.0.1 SOLANA_DEFAULT_CLUSTER=localnet npm start
 ```
 
-Variáveis opcionais: `.env.example` (`HOST`, `PORT`, pasta da sessão). Testes: `npm test`.
+O cluster informado contextualiza a sessão; não estabelece uma conexão RPC nem executa transações. O segredo de sessão assina cookies e não autentica a configuração da API. O uso individual local é o contexto previsto para este recorte.
 
-### 2. Conectar a API
+## Orientações para oficinas
 
-Luma não traz modelo embutido. Use uma API **sua** (OpenAI ou provedor compatível: endpoint, modelo, key). Sem API, Luma se apresenta e pede essa conexão.
+1. Prepare o ambiente e teste a conexão ao modelo antes da atividade.
+2. Peça que cada pessoa execute sua própria instância e utilize sua própria API.
+3. Combine o uso de localnet ou devnet.
+4. Oriente cada participante a declarar um objetivo em uma frase.
+5. Incentive tentativas práticas e perguntas sobre os resultados observados.
+6. Retome dúvidas recorrentes em momentos de discussão coletiva.
 
-A key fica só na **memória deste processo**. Depois de conectar, o campo some da tela; o distintivo no topo passa a mostrar o modelo.
+Luma funciona como um recurso complementar de tutoria individual. A mediação de quem facilita continua relevante para discutir conceitos, acompanhar dificuldades e relacionar a experiência aos objetivos da oficina.
 
-### 3. Começar a sessão
+## Desenvolvimento e testes
 
-Marque o consentimento (perfil neste computador), escreva **como devemos te chamar** e o **objetivo**: o que você quer aprender a construir na Solana. Pode ser amplo (“entender contas”) ou um recorte (“mint com Token-2022”, “PDA de vault”).
+```bash
+npm ci
+npm run build
+npm test
+```
 
-Sem sessão iniciada, Luma **não contextualiza** — não usa nome nem objetivo, e o chat pede para começar à esquerda. O botão fica verde (**Sessão iniciada**) só depois do clique.
+Os testes cobrem armazenamento, consentimento, cookies de sessão, validação de configuração, interpretação de respostas, limitação de requisições e rotas HTTP. A integração com a LLM utiliza um servidor simulado, sem depender de uma API paga.
 
-### 4. Conversar
+Esses testes verificam o funcionamento técnico. A precisão das respostas de modelos reais e os resultados educacionais precisam de avaliações próprias.
 
-Pergunte, descreva o bloqueio ou cole um trecho. Use as opções quando quiser avançar sem digitar. Cada resposta da Luma deve caber no passo atual: conceito, exemplo no seu tópico, pergunta.
+### Estrutura principal
 
-Relacione o que aparece (`owner`, `signer`, rent, PDA) ao que você declarou. Se o objetivo ainda estiver vago, Luma pode fazer no máximo uma pergunta para afiná-lo — e não inventa um produto no seu lugar.
+```text
+apps/ideathon/src/
+  index.ts               Inicialização do servidor
+  http-app.ts            Rotas HTTP e fluxo de chat
+  learner-store.ts       Persistência dos perfis em SQLite
+  pilot-session.ts       Cookies e assinatura de sessão
+  llm-client.ts          Integração com API e interpretação das respostas
+  luma-prompt.ts         Instruções complementares do tutor
+  tutor-mode.ts          Identificação do tipo de provedor
+  rate-limiter.ts        Limitação de requisições de chat
+  session-snapshot.ts    Contexto público da sessão
+  ui.ts                 Página da interface
+  student-ui-assets.ts   Estilos e comportamento no navegador
 
-### 5. Mudar de tópico
+apps/ideathon/test/      Testes automatizados
+```
 
-O campo passa a se chamar **Tópico**. Escreva um assunto **novo** (por exemplo, de contas para CPI) e clique em **reiniciar sessão**. O chat zera; Luma contextualiza só o recorte novo. Nome e consentimento permanecem.
+### Bancos de versões anteriores
 
-Cada visita (e cada recarregar) começa **sessão limpa**: cookie apagado, formulário vazio, só a apresentação da Luma.
+Na inicialização, a migração atual remove tabelas legadas que não pertencem ao recorte de tutoria individual. Antes de reutilizar um banco de uma versão anterior, faça uma cópia de segurança ou configure uma pasta de dados nova.
 
-## O que fica neste computador
+## Colaborações
 
-Com consentimento, apenas **nome, objetivo e consentimento** em `.ideathon-harness`. O histórico do chat não é gravado no servidor. Não coloque seed nem chave privada em lugar nenhum do kit.
+**Colaborações são bem-vindas.** Você pode contribuir com código, documentação, revisão técnica, acessibilidade, exemplos didáticos e relatos de uso em oficinas.
 
-## Para quem facilita uma oficina
+As contribuições devem preservar a proposta de tutoria guiada, a participação ativa de aprendiz, a comunicação em português brasileiro e o cuidado com dados e segredos.
 
-Peça que cada pessoa use a **própria** API, `localnet` (ou `devnet` se combinado) e um objetivo escrito em uma frase. A Luma é tutoria de mesa, não painel de turma: não há visão de facilitador neste recorte. O valor está no diálogo — aprendiz pensa, tenta, refina; Luma conduz sem substituir quem constrói.
+### Como participar
+
+- **Relatar problemas:** abra uma [issue](https://github.com/smp-sandramariapereira/luma-tutor-solana-dev/issues) com o comportamento esperado, o resultado observado e os passos para reproduzir. Informe ambiente e modelo quando relevantes.
+- **Sugerir melhorias:** descreva a necessidade, quem seria beneficiado e como a proposta se relaciona com o propósito pedagógico.
+- **Compartilhar experiências:** registre dificuldades e observações de oficinas sem identificar participantes nem expor conversas privadas.
+- **Revisar conteúdo:** indique o trecho, a correção sugerida e a documentação oficial ou evidência que a sustenta.
+- **Contribuir com código:** faça um fork, crie uma branch e envie um pull request para revisão.
+
+Para mudanças amplas de arquitetura ou escopo, abra uma issue antes de implementar, para alinhar a proposta com a manutenção do projeto.
+
+### Antes de enviar um pull request
+
+1. Descreva o problema ou a necessidade atendida.
+2. Explique a mudança e seu efeito na experiência de uso.
+3. Execute `npm run build` e `npm test` para alterações de código.
+4. Inclua testes relevantes quando a mudança alterar comportamento.
+5. Atualize a documentação afetada.
+6. Remova credenciais, dados pessoais e segredos de exemplos, logs e capturas de tela.
+
+Os pull requests serão avaliados pela manutenção. A abertura à colaboração não implica incorporação automática de todas as propostas.
+
+## Evolução do projeto
+
+A evolução será orientada pelas experiências em oficinas, pela revisão técnica e pelas contribuições da comunidade. Possíveis frentes incluem:
+
+- Referências oficiais contextualizadas e recuperação de documentação.
+- Exemplos didáticos verificados e associados às versões das ferramentas.
+- Diagnóstico inicial e acompanhamento das etapas de aprendizagem.
+- Estudos sobre compreensão, autonomia e transferência para novos problemas.
+- Sessões efêmeras e controles de exclusão e retenção de perfis.
+- Melhorias de acessibilidade e experiência de uso.
+- Integração contínua e ampliação das avaliações automatizadas.
+- Isolamento de credenciais e controles adequados a instâncias compartilhadas.
+- Recursos de apoio a quem facilita oficinas.
+
+Essas frentes são possibilidades de desenvolvimento, sem compromisso de prazo. Sua priorização deve preservar a simplicidade e o propósito pedagógico do projeto.
+
+## Licença
+
+A licença de uso e distribuição ainda precisa ser formalizada em um arquivo `LICENSE`. A visibilidade pública do repositório e o convite à colaboração não substituem essa definição.
+
+Até sua formalização, consulte a manutenção para esclarecer condições de reutilização e de incorporação de contribuições.
+
+## Origem
+
+Luma nasceu como uma entrega de aprendizagem no contexto da Solana Foundation Brazil e mantém o foco em apoiar a formação de pessoas que desenvolvem no ecossistema Solana.
+
+Repositório: [smp-sandramariapereira/luma-tutor-solana-dev](https://github.com/smp-sandramariapereira/luma-tutor-solana-dev).
