@@ -1,6 +1,6 @@
 # Luma - Tutor Solana
 
-Kit aberto de tutoria para ideathons e oficinas Solana. Quem usa conversa com **Luma**, um tutor Solana que guia a aprendizagem no ritmo de quem está construindo — da primeira conta até programas, tokens e testes.
+Kit aberto de tutoria para ideathons e oficinas Solana de desenvolvimento de aplicações. Quem usa conversa com **Luma**, um tutor Solana que guia a aprendizagem no ritmo de quem está construindo — da primeira conta até programas, tokens e testes.
 
 O projeto nasceu como entrega de **aprendizagem** (Solana Foundation Brazil). **Luma** ensina a pensar e a escrever o próximo passo; não entrega o produto inteiro no lugar de aprendiz.
 
