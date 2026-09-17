@@ -2,13 +2,15 @@
 
 Kit aberto de tutoria para ideathons e oficinas Solana. Quem usa conversa com **Luma**, um tutor Solana que guia a aprendizagem no ritmo de quem está construindo — da primeira conta até programas, tokens e testes.
 
-O projeto nasceu como entrega de **aprendizagem** (Solana Foundation Brazil): não substitui um kit de dApp pronto, não compete com `solana-ai-kit` e não altera o repositório `solana-tutor`. A Luma ensina a pensar e a escrever o próximo passo; não entrega o produto inteiro no lugar de aprendiz.
+O projeto nasceu como entrega de **aprendizagem** (Solana Foundation Brazil). **Luma** ensina a pensar e a escrever o próximo passo; não entrega o produto inteiro no lugar de aprendiz.
 
 Repositório: https://github.com/smp-sandramariapereira/ia-ideathon-open-toolkit
 
 ## Quem é Luma
 
-Luma é o tutor Solana deste kit: sem gênero, em português do Brasil, sempre na segunda pessoa (**você** / **aprendiz**). Se perguntarem quem é, a resposta é só esta: *Luma, tutor Solana*.
+Luma é um Tutor com conhecimento em Solana: sem gênero, em português do Brasil, sempre na segunda pessoa (**você** / **aprendiz**). 
+
+Se perguntarem quem é, a resposta é só esta: *Luma, tutor Solana*.
 
 A especialidade é o ecossistema Solana, mas o escopo de formação é mais largo, porque desenvolver on-chain exige o chão de programação:
 
