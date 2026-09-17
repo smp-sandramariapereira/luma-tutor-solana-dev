@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Conheça Luma: tutoria em português brasileiro para aprender a desenvolver na Solana, um conceito e uma tentativa por vez.">
+  <meta name="theme-color" content="#f6f3eb">
+  <title>Luma — Aprenda a construir na Solana</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#inicio" aria-label="Luma, início"><span class="brand-mark" aria-hidden="true">{ }</span><span>Luma<span class="brand-sub">TUTOR SOLANA</span></span></a>
+    <nav aria-label="Navegação principal"><a href="#como-funciona">Como funciona</a><a href="#visualizacao">Conheça a experiência</a><a href="#comecar">Comece a usar</a></nav>
+    <a class="header-github" href="https://github.com/smp-sandramariapereira/luma-tutor-solana-dev" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+  </div>
+</header>
+<main id="conteudo">
+  <section class="hero container" id="inicio" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <p class="eyebrow">EM PORTUGUÊS · NO SEU RITMO</p>
+      <h1 id="hero-title">Aprenda a construir<br>na Solana.<br><span>Um passo por vez.</span></h1>
+      <p class="hero-description">Sua dúvida é o ponto de partida. Luma acompanha você com explicações, exemplos curtos e perguntas para construir seu próprio caminho.</p>
+      <div class="actions"><a class="button primary" href="#comecar">Comece a usar <span aria-hidden="true">↗</span></a><a class="text-link" href="#como-funciona">Conheça a proposta <span aria-hidden="true">↓</span></a></div>
+      <p class="hero-note">Tutoria individual para oficinas, ideathons e suas primeiras construções.</p>
+    </div>
+    <figure class="hero-art"><img src="assets/luma-hero.webp" width="880" height="710" alt="Ilustração de um balão de diálogo verde e roxo ao lado de chaves de código."><figcaption>Conversar. Compreender. Construir.</figcaption></figure>
+  </section>
+  <div class="topic-strip" aria-label="Temas de aprendizagem"><div class="container"><span>CONTAS &amp; OWNER</span><span>RUST</span><span>PDAs</span><span>TOKEN-2022</span><span>TESTES &amp; DEPURAÇÃO</span></div></div>
+
+  <section class="section container" id="como-funciona" aria-labelledby="how-title">
+    <div class="section-heading"><p class="eyebrow">01 / SEU PONTO DE PARTIDA</p><h2 id="how-title">Comece pela sua dúvida.</h2><p>Um conceito, uma ideia de projeto ou um bloqueio no código. Você traz o objetivo; Luma orienta o próximo passo.</p></div>
+    <div class="question-grid">
+      <article class="question-card"><span class="card-symbol" aria-hidden="true">?</span><p class="card-label">ENTENDER UM CONCEITO</p><h3>“Quero entender<br>contas e owner.”</h3><p>Explore o fundamento antes de avançar para a implementação.</p></article>
+      <article class="question-card"><span class="card-symbol green" aria-hidden="true">{ }</span><p class="card-label">EXPLORAR UMA CONSTRUÇÃO</p><h3>“Quero aprender sobre<br>um mint com Token-2022.”</h3><p>Contextualize cada etapa no que você quer aprender a construir.</p></article>
+      <article class="question-card"><span class="card-symbol" aria-hidden="true">&gt;_</span><p class="card-label">INVESTIGAR UM BLOQUEIO</p><h3>“Meu código deu erro.<br>Como investigar?”</h3><p>Compartilhe um trecho e volte com o resultado da sua tentativa.</p></article>
+    </div>
+    <div class="principle"><span class="principle-mark" aria-hidden="true">{ }</span><div><h3>Você constrói. Luma acompanha.</h3><p>A proposta é apoiar seu raciocínio e sua autonomia com um conceito por vez, exemplos contextualizados e feedback sobre suas tentativas.</p></div></div>
+  </section>
+
+  <section class="experience section" id="visualizacao" aria-labelledby="experience-title"><div class="container">
+    <div class="experience-heading"><div><p class="eyebrow">02 / CONHEÇA A EXPERIÊNCIA</p><h2 id="experience-title">Pergunte, experimente<br>e volte.</h2></div><p>Declare seu objetivo, converse com Luma e teste o que aprendeu no seu próprio ambiente de desenvolvimento.</p></div>
+    <figure class="experience-figure">
+      <div class="demo-window" aria-label="Exemplo ilustrativo da experiência de tutoria; não é uma conversa ativa">
+        <div class="demo-title"><div class="window-dots" aria-hidden="true"><span></span><span></span><span></span></div><span>Luma — tutor Solana</span><span class="demo-badge">EXEMPLO ILUSTRATIVO</span></div>
+        <div class="demo-body"><aside class="demo-sidebar"><p class="demo-label">SUA SESSÃO</p><p class="demo-field-label">Nome</p><div class="demo-field">Aprendiz</div><p class="demo-field-label">Objetivo</p><div class="demo-field">Entender contas e owner</div><div class="demo-session">Sessão iniciada</div><p class="sidebar-note">Um objetivo em uma frase ajuda a contextualizar sua conversa.</p></aside>
+        <div class="demo-chat"><div class="demo-message learner"><p class="speaker">VOCÊ</p><p>O que significa owner em uma conta Solana?</p></div><div class="demo-message tutor"><p class="speaker">LUMA</p><p>O <code>owner</code> identifica o programa responsável pela conta. Em geral, só esse programa pode alterar seus dados.</p><p>Uma conta pode ter saldo e pertencer a um programa diferente do System Program. Por que uma assinatura, sozinha, não permite alterar os dados de qualquer conta?</p></div><div class="demo-options"><span>Quero um exemplo</span><span>Ainda não entendi</span><span>Vou tentar responder</span></div><div class="demo-composer">Pergunte ou compartilhe sua tentativa…</div></div></div>
+      </div>
+      <figcaption>Exemplo ilustrativo, sem conexão com uma API. As respostas reais dependem do modelo escolhido.</figcaption>
+    </figure>
+    <ol class="learning-cycle"><li><span>01</span><div><h3>Pergunte</h3><p>Traga seu objetivo, sua dúvida ou um trecho de código.</p></div></li><li><span>02</span><div><h3>Experimente</h3><p>Teste o conceito no seu editor ou terminal.</p></div></li><li><span>03</span><div><h3>Volte</h3><p>Compartilhe o resultado e refine a próxima tentativa.</p></div></li></ol>
+  </div></section>
+
+  <section class="section container" id="comecar" aria-labelledby="start-title">
+    <div class="start-grid"><div><p class="eyebrow">03 / PREPARE SEU PRIMEIRO PASSO</p><h2 id="start-title">Seu objetivo.<br>Sua API.<br><span class="purple-text">Seu caminho.</span></h2><p class="start-intro">Luma funciona no seu computador. Esta página apresenta o projeto; a conversa acontece depois de instalar e executar o kit.</p><a class="text-link" href="https://github.com/smp-sandramariapereira/luma-tutor-solana-dev#instalação" target="_blank" rel="noopener noreferrer">Abrir tutorial completo <span aria-hidden="true">↗</span></a></div>
+    <div><ol class="setup-steps"><li><span class="step-number">1</span><div><h3>Instale e execute o kit</h3><p>Use Git, Node.js 24 e npm. Em uma oficina, peça apoio a quem facilita.</p></div></li><li><span class="step-number">2</span><div><h3>Conecte seu modelo</h3><p>Informe endpoint, modelo e chave de API, quando necessária. O kit não inclui modelo nem créditos.</p></div></li><li><span class="step-number">3</span><div><h3>Declare seu objetivo</h3><p>Leia o consentimento, informe seu nome e escreva o que quer aprender. Depois, comece a sessão.</p></div></li></ol>
+    <div class="terminal"><div class="terminal-header"><span>NO SEU TERMINAL</span><button id="copy-install" type="button">Copiar comandos</button></div><pre><code id="install-code">git clone https://github.com/smp-sandramariapereira/luma-tutor-solana-dev.git
+cd luma-tutor-solana-dev
+npm ci
+npm run dev</code></pre><p>Depois, abra <a href="http://127.0.0.1:4177" target="_blank" rel="noopener noreferrer">http://127.0.0.1:4177</a>.</p><p id="copy-status" class="copy-status" role="status" aria-live="polite"></p></div></div></div>
+  </section>
+
+  <section class="care-section"><div class="container care-grid"><div><p class="eyebrow">APRENDA COM CUIDADO</p><h2>Proteja seus dados.<br>Confira suas tentativas.</h2></div><ul><li><strong>Mantenha seus segredos fora da conversa.</strong> Nunca envie seed phrase, chave privada ou arquivo de keypair.</li><li><strong>Saiba o que é compartilhado.</strong> Nome, objetivo e mensagens são encaminhados ao modelo conectado. O perfil é guardado na máquina do servidor mediante consentimento.</li><li><strong>Use ambientes de teste.</strong> Confira código, dependências e versões. A orientação prioriza localnet e devnet; Luma não possui ferramentas para assinar ou enviar transações.</li></ul></div></section>
+
+  <section class="section container" id="comunidade" aria-labelledby="community-title"><div class="community-grid"><div><p class="eyebrow">04 / CONSTRUÇÃO EM COMUNIDADE</p><h2 id="community-title">Da aprendizagem<br>à prática.</h2><p>Luma nasceu como uma entrega de aprendizagem no contexto da Solana Foundation Brazil, com foco em oficinas e ideathons.</p><div class="field-note"><p class="card-label">EXPERIÊNCIA DE USO</p><p>Luma foi utilizado como apoio no desenvolvimento de <strong>Geoyeld</strong>, aplicação finalista do hackathon Solana e Cursor em Passo Fundo.</p><p class="small">Uma experiência de uso em um contexto real de desenvolvimento.</p></div></div><div class="contribution"><span class="contribution-mark" aria-hidden="true">+</span><h3>Colaborações<br>são bem-vindas.</h3><p>Contribua com documentação, revisão técnica, acessibilidade, exemplos didáticos ou relatos de uso em oficinas.</p><a class="button secondary" href="https://github.com/smp-sandramariapereira/luma-tutor-solana-dev#colaborações" target="_blank" rel="noopener noreferrer">Conheça como contribuir <span aria-hidden="true">↗</span></a><p class="small">As propostas são revisadas pela manutenção para preservar o propósito pedagógico.</p></div></div></section>
+
+  <section class="closing"><div class="container"><p class="eyebrow">O PRÓXIMO PASSO COMEÇA COM UMA PERGUNTA</p><h2>O que você quer aprender<br>a construir na Solana?</h2><div class="actions"><a class="button primary" href="https://github.com/smp-sandramariapereira/luma-tutor-solana-dev" target="_blank" rel="noopener noreferrer">Acesse o projeto <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/smp-sandramariapereira/luma-tutor-solana-dev/blob/main/Luma_Solana_Tutor.pdf" target="_blank" rel="noopener noreferrer">Veja a apresentação <span aria-hidden="true">↗</span></a></div></div></section>
+</main>
+<footer class="container footer"><a class="brand footer-brand" href="#inicio"><span class="brand-mark" aria-hidden="true">{ }</span>Luma</a><p>Tutoria em português brasileiro.<br>Aprender, experimentar e construir.</p><a href="https://github.com/smp-sandramariapereira/luma-tutor-solana-dev" target="_blank" rel="noopener noreferrer">Projeto no GitHub ↗</a></footer>
+</body>
+</html>
