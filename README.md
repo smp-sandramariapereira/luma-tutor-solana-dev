@@ -1,4 +1,4 @@
-# IA Ideathon Open Toolkit
+# Luma - Tutor Solana
 
 Tutoria Solana com **Luma**: a pessoa conecta a própria API, declara um objetivo e aprende passo a passo — contas, `owner`, `signer`, PDAs, tokens — sem receber o projeto pronto.
 
